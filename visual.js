@@ -112,7 +112,12 @@ var vis = {
                 giveaway = vis.getGiveawayData($(this));
                 if (giveaway !== null) {
                     $('.giveaway__columns', this).prepend('<a href="javascript:void(0);" class="esg-bl-link"><div><i class="fa fa-plus-square"/> <span>eSG Blacklist</span></div></a>');
-                    $('.giveaway__columns', this).prepend('<div class="esg-win-chance">' + giveaway.chance.toFixed(3) + '%</div>');
+					if (giveaway.chance.toFixed(3) > 1) {
+						$('.giveaway__columns', this).prepend('<div class="esg-high-win-chance">' + giveaway.chance.toFixed(3) + '%</div>');
+					}
+					else {
+						$('.giveaway__columns', this).prepend('<div class="esg-win-chance">' + giveaway.chance.toFixed(3) + '%</div>');
+					}						                    
                     if (!giveaway.joined && giveaway.contributor.achievable && sg.points >= giveaway.points) {
                         $('.global__image-outer-wrap--game-medium', this).prepend('<div class="esg-join"><a href="javascript:void(0);" points="' + giveaway.points + '" joinHref="' + giveaway.href + '">Join</a></div>');
                     }

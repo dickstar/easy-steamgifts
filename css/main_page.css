@@ -18,6 +18,14 @@ div.esg-win-chance {
     background-image: -moz-linear-gradient(#f0f5eb 0%, #dfe5d8 100%) !important;
     background-image: -webkit-linear-gradient(#f0f5eb 0%, #dfe5d8 100%) !important;}
 
+div.esg-high-win-chance {
+    font-weight: bold;
+    border-color: #d9eaca #c3daac #aac68e #c2dca9 !important;
+    color: #A52A2A !important;
+    background-image: linear-gradient(#f0f5eb 0%, #dfe5d8 100%) !important;
+    background-image: -moz-linear-gradient(#f0f5eb 0%, #dfe5d8 100%) !important;
+    background-image: -webkit-linear-gradient(#f0f5eb 0%, #dfe5d8 100%) !important;}	
+
 .esg-bl-link {
     font-weight: bold;
     border-color: #eae8e9 #d9d5da #c6c2c3 #dadcdc !important;
